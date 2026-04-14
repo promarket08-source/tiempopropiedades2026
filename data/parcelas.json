@@ -1,23 +1,78 @@
 {
   "parcelas": [
     {
-      "id": 1,
+      "id": "chesque",
       "nombre": "Parcela Chesque",
       "ubicacion": "Chesque, Villarrica",
-      "tamano": "5000m2",
+      "region": "Araucanía",
+      "tamano": 5000,
       "precio": 45000000,
+      "precio_formato": "$45.000.000",
       "estado": "disponible",
-      " caracteristicas": ["Vista volcan", "agua luz", "acceso rural"],
+      "tipo": "parcela",
+      "caracteristicas": ["Vista Volcán", "Agua potable", "Luz eléctrica", "Camino rural"],
+      "descripcion": "Parcela en sector Chesque con vista panorámica al Volcán Villarrica. Terreno plano y文人",
+      "imagenes": [
+        "https://lh3.googleusercontent.com/p/AF1QipNJ0gH93XUWJkdQ0gG1qWqO0O0O0O0O0O0O0O0"
+      ]
+    },
+    {
+      "id": "cudico-km20",
+      "nombre": "Parcela Cudico KM 20",
+      "ubicacion": "Cudico, Villarrica",
+      "region": "Araucanía",
+      "tamano": 10000,
+      "precio": 85000000,
+      "precio_formato": "$85.000.000",
+      "estado": "disponible",
+      "tipo": "parcela",
+      "caracteristicas": ["Frente río", "Bosque nativo", "Privacidad", "Agua y luz"],
+      "descripcion": "Gran parcela de 1 hectárea en Cudico KM 20. Frente al río con bosque nativo.",
       "imagenes": []
     },
     {
-      "id": 2,
-      "nombre": "Parcela Cudico KM 20",
-      "ubicacion": "Cudico, Villarrica",
-      "tamano": "10000m2",
-      "precio": 85000000,
+      "id": "rodolfo-jessica",
+      "nombre": "Parcela Rodolfo Jessica",
+      "ubicacion": "Villarrica",
+      "region": "Araucanía",
+      "tamano": 3500,
+      "precio": 38000000,
+      "precio_formato": "$38.000.000",
       "estado": "disponible",
-      "caracteristicas": ["Frente rio", "bosque nativo", "privacidad"],
+      "tipo": "parcela",
+      "caracteristicas": ["Sector residencial", "Agua", "Luz"],
+      "descripcion": "Parcela ideal para construir vivienda o fundo.",
+      "imagenes": []
+    },
+    {
+      "id": "conquil",
+      "nombre": "Parcelas Conquil",
+      "ubicacion": "Conquil, Villarrica",
+      "region": "Araucanía",
+      "tamano": 4200,
+      "precio": 42000000,
+      "precio_formato": "$42.000.000",
+      "estado": "disponible",
+      "tipo": "parcela",
+      "caracteristicas": ["Vista lago", "Bosque nativo", "Acceso privado"],
+      "descripcion": "Parcelas en sector Conquil con excelente acceso y privacidad.",
+      "imagenes": []
+    }
+  ],
+  "propiedades": [
+    {
+      "id": "casa-los-volcanes",
+      "nombre": "Casa Los Volcanes",
+      "ubicacion": "Los Volcanes, Villarrica",
+      "region": "Araucanía",
+      "tamano": 180,
+      "terreno": 500,
+      "precio": 185000000,
+      "precio_formato": "$185.000.000",
+      "estado": "disponible",
+      "tipo": "casa",
+      "caracteristicas": ["3 dormitorios", "2 baños", "Cocina abierta", "Terraza", "Vista Volcán"],
+      "descripcion": "Casa moderna con vista al Volcán Villarrica. Entrega inmediata.",
       "imagenes": []
     }
   ]

@@ -4,6 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tiempo Propiedades - Parcelas y Propiedades en Villarrica</title>
+    <script>
+        // Cargar propiedades desde JSON
+        let propiedadesData = { parcelas: [], propiedades: [] };
+        
+        async function cargarPropiedades() {
+            try {
+                const response = await fetch('data/parcelas.json');
+                propiedadesData = await response.json();
+                renderizarPropiedades();
+            } catch(e) {
+                console.log('Usando datos por defecto');
+            }
+        }
+        
+        function formatPrecio(precio) {
+            return '$' + precio.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+        }
+        
+        function renderizarPropiedades() {
+            const grid = document.getElementById('propiedadesGrid');
+            if (!grid) return;
+            
+            const todas = [...propiedadesData.parcelas, ...propiedadesData.propiedades];
+            if (todas.length === 0) return;
+            
+            grid.innerHTML = todas.map((p, i) => `
+                <div class="group">
+                    <div class="relative rounded-2xl overflow-hidden">
+                        <img src="${p.imagenes?.[0] || 'https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=600'}" 
+                             alt="${p.nombre}" 
+                             class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-${p.tipo === 'casa' ? 'green' : 'red'}-500 text-white text-xs font-bold px-3 py-1 rounded-full">
+                                ${p.tipo === 'casa' ? 'CASA' : 'PARCELA'}
+                            </span>
+                        </div>
+                        <div class="absolute bottom-4 left-4 right-4">
+                            <h3 class="text-xl font-bold text-white">${p.nombre}</h3>
+                            <p class="text-gray-300 text-sm mt-1">${p.ubicacion} • ${p.tamano}m²</p>
+                            <div class="flex items-center gap-4 mt-3">
+                                <span class="text-cyan-400 font-bold text-lg">${formatPrecio(p.precio)}</span>
+                                <span class="text-gray-400 text-sm">${p.estado}</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="https://wa.me/56912345678?text=Hola%2C%20estoy%20interesado%20en%20${encodeURIComponent(p.nombre)}%20de%20${encodeURIComponent(p.ubicacion)}" 
+                       target="_blank" 
+                       class="mt-4 block w-full btn-secondary text-white font-semibold py-3 rounded-xl text-center">
+                        Solicitar Info
+                    </a>
+                </div>
+            `).join('');
+        }
+        
+        window.addEventListener('DOMContentLoaded', cargarPropiedades);
+    </script>
     <meta name="description" content="Parcelas y propiedades con vista al Lago Villarrica y Volcán Villarrica. Inversiones en el bosque nativo de Lican Ray, Pucón y Altamira. Corretaje especializado en la Araucanía.">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -858,7 +915,7 @@
             </div>
             
             <!-- Properties Grid -->
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div id="propiedadesGrid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Property 1 - Parcela Lago Villarrica -->
                 <div class="group">
                     <div class="relative rounded-2xl overflow-hidden">
