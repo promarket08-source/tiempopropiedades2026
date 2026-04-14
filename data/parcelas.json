@@ -11,15 +11,16 @@
       "estado": "disponible",
       "tipo": "parcela",
       "caracteristicas": ["Vista Volcán", "Agua potable", "Luz eléctrica", "Camino rural"],
-      "descripcion": "Parcela en sector Chesque con vista panorámica al Volcán Villarrica. Terreno plano y文人",
+      "descripcion": "Parcela en sector Chesque con vista panorámica al Volcán Villarrica. Terreno plano y文人. Ideal para vivienda o inversión.",
       "imagenes": [
-        "https://lh3.googleusercontent.com/p/AF1QipNJ0gH93XUWJkdQ0gG1qWqO0O0O0O0O0O0O0O0"
+        "https://lh3.googleusercontent.com/p/AF1QipNJ0gH93XUWJkdQ0gG1qWqO0O0O0O0O0O0O0O0O0",
+        "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=800"
       ]
     },
     {
       "id": "cudico-km20",
-      "nombre": "Parcela Cudico KM 20",
-      "ubicacion": "Cudico, Villarrica",
+      "nombre": "Parcela Cudico KM 20 - Sr Eliver",
+      "ubicacion": "Cudico KM 20, Villarrica",
       "region": "Araucanía",
       "tamano": 10000,
       "precio": 85000000,
@@ -27,12 +28,13 @@
       "estado": "disponible",
       "tipo": "parcela",
       "caracteristicas": ["Frente río", "Bosque nativo", "Privacidad", "Agua y luz"],
-      "descripcion": "Gran parcela de 1 hectárea en Cudico KM 20. Frente al río con bosque nativo.",
-      "imagenes": []
+      "descripcion": "Gran parcela de 1 hectárea en Cudico KM 20. Frente al río con bosque nativo. Video drone disponible.",
+      "imagenes": [],
+      "video": "https://drive.google.com/file/1Iv1gHZQ3AoWA-oCrG5gDyXzrSZ7wDj0y"
     },
     {
       "id": "rodolfo-jessica",
-      "nombre": "Parcela Rodolfo Jessica",
+      "nombre": "Parcela Rodolfo y Jessica",
       "ubicacion": "Villarrica",
       "region": "Araucanía",
       "tamano": 3500,
@@ -40,8 +42,8 @@
       "precio_formato": "$38.000.000",
       "estado": "disponible",
       "tipo": "parcela",
-      "caracteristicas": ["Sector residencial", "Agua", "Luz"],
-      "descripcion": "Parcela ideal para construir vivienda o fundo.",
+      "caracteristicas": ["Sector residencial", "Agua", "Luz", "Cerca centro"],
+      "descripcion": "Parcela ideal para construir vivienda o fundo. Cerca delcentro de Villarrica.",
       "imagenes": []
     },
     {
@@ -55,7 +57,7 @@
       "estado": "disponible",
       "tipo": "parcela",
       "caracteristicas": ["Vista lago", "Bosque nativo", "Acceso privado"],
-      "descripcion": "Parcelas en sector Conquil con excelente acceso y privacidad.",
+      "descripcion": "Parcelas en sector Conquil con excelente acceso y privacidad. Vista al Lago Villarrica.",
       "imagenes": []
     }
   ],
@@ -72,8 +74,13 @@
       "estado": "disponible",
       "tipo": "casa",
       "caracteristicas": ["3 dormitorios", "2 baños", "Cocina abierta", "Terraza", "Vista Volcán"],
-      "descripcion": "Casa moderna con vista al Volcán Villarrica. Entrega inmediata.",
+      "descripcion": "Casa moderna con vista al Volcán Villarrica. Entrega inmediata. Excelente condición.",
       "imagenes": []
     }
-  ]
+  ],
+  "contacto": {
+    "whatsapp": "+56964681874",
+    "email": "tiempopropiedades@gmail.com",
+    "instagram": "@tiempo.propiedades"
+  }
 }
