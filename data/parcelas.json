@@ -1,0 +1,24 @@
+{
+  "parcelas": [
+    {
+      "id": 1,
+      "nombre": "Parcela Chesque",
+      "ubicacion": "Chesque, Villarrica",
+      "tamano": "5000m2",
+      "precio": 45000000,
+      "estado": "disponible",
+      " caracteristicas": ["Vista volcan", "agua luz", "acceso rural"],
+      "imagenes": []
+    },
+    {
+      "id": 2,
+      "nombre": "Parcela Cudico KM 20",
+      "ubicacion": "Cudico, Villarrica",
+      "tamano": "10000m2",
+      "precio": 85000000,
+      "estado": "disponible",
+      "caracteristicas": ["Frente rio", "bosque nativo", "privacidad"],
+      "imagenes": []
+    }
+  ]
+}
