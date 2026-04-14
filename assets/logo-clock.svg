@@ -1,0 +1,25 @@
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Outer ring -->
+  <circle cx="60" cy="60" r="55" stroke="#0ec0f2" stroke-width="4" stroke-dasharray="8 4"/>
+  
+  <!-- Middle ring -->
+  <circle cx="60" cy="60" r="45" stroke="#e50914" stroke-width="3"/>
+  
+  <!-- Inner ring -->
+  <circle cx="60" cy="60" r="35" stroke="white" stroke-width="2"/>
+  
+  <!-- Clock center -->
+  <circle cx="60" cy="60" r="5" fill="#0ec0f2"/>
+  
+  <!-- Hour hand -->
+  <line x1="60" y1="60" x2="60" y2="32" stroke="white" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Minute hand -->
+  <line x1="60" y1="60" x2="82" y2="50" stroke="#0ec0f2" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Second hand -->
+  <line x1="60" y1="60" x2="45" y2="75" stroke="#e50914" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- TP text -->
+  <text x="60" y="95" text-anchor="middle" fill="#0ec0f2" font-family="Inter, sans-serif" font-weight="bold" font-size="12">TP</text>
+</svg>
